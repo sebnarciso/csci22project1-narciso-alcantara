@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins";
+  color: #373737;
+}
+
+nav {
+  display:grid;
+  grid-template-columns: 40% 60%;
+  background-color: #EBECEB;
+}
+
+nav ul{
+  display: flex;
+}
+
+.main-nav{
+  padding: 15px 0px 15px 30px;
+}
+.nav-list li {
+  list-style: none;
+  margin-right: 100px;
+  padding: 10px 0px 0px 0px
+}
+
+.nav-list li a{
+  color: #373737;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+li a::after{
+  content:"";
+  position: absolute;
+  display:block;
+  height: 0.1em;
+  width: 0;
+  background-color: #606060;
+  bottom:-0.5em;
+  transition: all ease-in-out 250ms;
+}
+
+li a:hover::after{
+  width:100%;
+}
+
+.addorder-container {
+  display: grid;
+  grid-template-columns: 1FR 2FR 1FR;
+  grid-template-rows: 200px .5FR .5FR .5FR .5FR .5FR 200px;
+  grid-gap: 50px;
+}
+
+.addorder-form {
+  padding: 100px 0px 50px 100px;
+  grid-column-start:1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-items: center;
+  justify-content: center;
+}
+
+#food-item1{
+  padding: 50px 0px 0px 100px;
+  grid-column-start:1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F9F9;
+}
+#food-item1 > img{
+    float: left;
+}
+
+.food-item1details{
+  padding: 0px 0px 50px 200px;
+}
+
+#food-item2{
+  padding: 50px 0px 0px 100px;
+  grid-column-start:1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F9F9;
+}
+
+#food-item2 > img{
+    float: left;
+}
+
+.food-item2details{
+  padding: 0px 0px 50px 200px;
+}
+
+#food-item3{
+  padding: 50px 0px 0px 100px;
+  grid-column-start:1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F9F9;
+}
+
+#food-item3 > img{
+    float: left;
+}
+
+.food-item3details{
+  padding: 0px 0px 50px 200px;
+}
+
+#food-item4{
+  padding: 50px 0px 0px 100px;
+  grid-column-start:1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F9F9;
+}
+
+#food-item4 > img{
+    float: left;
+}
+
+.food-item4details{
+  padding: 0px 0px 50px 200px;
+}
+
+#food-item5{
+  padding: 50px 0px 0px 100px;
+  grid-column-start:1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F9F9;
+}
+
+#food-item5 > img{
+    float: left;
+}
+
+.food-item5details{
+  padding: 0px 0px 50px 200px;
+}
+
+.bottom{
+  padding: 50px 0px 0px 100px;
+  grid-column-start:1;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F9F9;
+}
+
+
+input[type=number] {
+  width: 6%;
+  padding: 8px 20px;
+  display: inline-block;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+button{
+  font-family: Poppins;
+  background-color: #555555;
+  border: 2px solid #555555;
+  color: white;
+  padding: 10px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 15px 0px 10px 0px;
+  cursor: pointer;
+  align-items: center;
+  width: 15%;
+  border-radius: 5px;
+}
+
+#cancel-btn{
+  background-color: white;
+  border-color: #555555;
+  color: #555555;
+}
+
+.btn-grp{
+  display: flex;
+  gap: 10px;
+}
+
+.addorder-form h2 {
+  margin-bottom: 14px;
+}
+
+
+footer{
+  grid-column-start:1;
+  grid-column-end: 4;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  background-color: #EBECEB;
+  position: relative;
+  font-size: 12px;
+}

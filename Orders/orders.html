@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Orders</title>
+    <link href="ordersstyle.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="main-nav">
+      <img src="../Images/images_orders/logo.png" alt="logo">
+
+      <ul class="nav-list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Customers/customers.html">Customers</a></li>
+        <li><a href="../Food/foods.html">Food</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="../index.html">Sign Out</a></li>
+      </ul>
+    </nav>
+
+    <section class="order-list-container">
+      <h1>Orders</h1>
+      <p>Do remember that customer data must be upheld with utmost confidentiality.</p>
+    <section id="addorder-btn">
+      <button class="add-btn" onclick="document.location='addorder.html'">+ Add Order</button>
+    </section>
+
+      <section class="order-list-table">
+        <table>
+          <tr id="main-head">
+            <th>Order Number</th>
+            <th>Customer Name</th>
+            <th>Order Date</th>
+            <th>Order Total</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>0000001</td>
+            <td>Juan Dela Cruz</td>
+            <td>03/25/2021</td>
+            <td>PHP 260</td>
+            <td>
+              <button class="view-btn" onclick="document.location='order1.html'">View Order</button>
+              <button class="edit-btn" onclick="document.location='editorder1.html'">Edit Details</button>
+              <button class="del-btn" onclick="document.location='orders.html'">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>0000101</td>
+            <td>Juan Dela Cruz</td>
+            <td>06/30/2021</td>
+            <td>PHP 270</td>
+            <td>
+              <button class="view-btn" onclick="document.location='order2.html'">View Order</button>
+              <button class="edit-btn" onclick="document.location='editorder2.html'">Edit Details</button>
+              <button class="del-btn" onclick="document.location='orders.html'">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>0000002</td>
+            <td>Japeth Shamanco</td>
+            <td>04/26/2021</td>
+            <td>PHP 290</td>
+            <td>
+              <button class="view-btn" onclick="document.location='order3.html'">View Order</button>
+              <button class="edit-btn" onclick="document.location='editorder3.html'">Edit Details</button>
+              <button class="del-btn" onclick="document.location='orders.html'">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>0000202</td>
+            <td>Japeth Shamanco</td>
+            <td>07/31/2021</td>
+            <td>PHP 280</td>
+            <td>
+              <button class="view-btn" onclick="document.location='order4.html'">View Order</button>
+              <button class="edit-btn" onclick="document.location='editorder4.html'">Edit Details</button>
+              <button class="del-btn" onclick="document.location='orders.html'">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>0000003</td>
+            <td>Brenda Santos</td>
+            <td>05/27/2021</td>
+            <td>PHP 240</td>
+            <td>
+              <button class="view-btn" onclick="document.location='order5.html'">View Order</button>
+              <button class="edit-btn" onclick="document.location='editorder5.html'">Edit Details</button>
+              <button class="del-btn" onclick="document.location='orders.html'">Delete</button>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </section>
+    <footer>
+      <p>&copy; 2021. Submitted by Seb Narciso and Lance Alcantara.</p>
+    </footer>
+  </body>
+</html>

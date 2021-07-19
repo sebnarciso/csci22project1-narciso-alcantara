@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins";
+  color: #373737;
+}
+
+nav {
+  display:grid;
+  grid-template-columns: 40% 60%;
+  background-color: #EBECEB;
+}
+
+nav ul{
+  display: flex;
+}
+
+.main-nav{
+  padding: 15px 0px 15px 30px;
+}
+.nav-list li {
+  list-style: none;
+  margin-right: 100px;
+  padding: 10px 0px 0px 0px
+}
+
+.nav-list li a{
+  color: #373737;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+li a::after{
+  content:"";
+  position: absolute;
+  display:block;
+  height: 0.1em;
+  width: 0;
+  background-color: #606060;
+  bottom:-0.5em;
+  transition: all ease-in-out 250ms;
+}
+
+li a:hover::after{
+  width:100%;
+}
+
+.signup-container {
+  display: grid;
+  grid-template-columns: 0.128440367FR 0.642201835FR 0.229357798FR;
+  grid-template-rows: 0.16212711FR 0.63035019FR 0.2075227FR;
+}
+
+.signup-form {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-container > img {
+  grid-column-start: 4;
+  grid-column-end: 5 auto;
+  grid-row: 1 / 4;
+}
+
+input[type=text], input[type=password], input[type=date], input[type=email], input[type=tel] {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+
+button {
+  font-family: Poppins;
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 10px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 15px 0px 10px 0px;
+  cursor: pointer;
+  align-items: center;
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+
+form > h2 {
+  margin-bottom: 14px;
+}
+
+footer{
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  background-color: #EBECEB;
+  position: relative;
+  font-size: 12px;
+}

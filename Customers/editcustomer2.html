@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="editcustomer.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Edit Customer Details</title>
+  </head>
+
+  <body>
+    <nav class="main-nav">
+      <img src="../Images/images_customers/logo.png" alt="logo">
+
+      <ul class="nav-list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="../Food/foods.html">Food</a></li>
+        <li><a href="../Orders/orders.html">Orders</a></li>
+        <li><a href="../index.html">Sign Out</a></li>
+      </ul>
+    </nav>
+
+    <section class="editcustomer-container">
+      <section class="editcustomer-form">
+        <h1>Edit Customer Details</h1>
+        <form>
+          <label class="edit-customerid" for="firstname">First name:</label>
+          <input type="text" name="firstname" value="Japeth">
+
+          <label class="edit-customerid" for="lastname">Last name:</label>
+          <input type="text" name="lastname" value="Shamanco">
+
+          <label class="edit-customerid" for="address-line-1">Address Line 1</label>
+          <input type="text" name="address-line-1" value="101-A, Lowe Street">
+
+          <label class="edit-customerid" for="address-line-2">Address Line 2</label>
+          <input type="text" name="address-line-2" value="Malolos, Bulacan">
+
+          <label class="edit-customerid" for="email">Email*</label>
+          <input type="email" name="email" value="japeth.shamanco@obf.ateneo.edu">
+
+          <label class="edit-customerid" for="contactnumber">Contact Number</label>
+          <input type="tel" name="contactnumber" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" value="0998-765-4321">
+
+          <section class="btn-grp">
+            <button id="save-btn" onclick="document.location='customer2.html'" type="button">Save Changes</button>
+            <button id="cancel-btn" onclick="document.location='customer2.html'" type="button">Cancel</button>
+          </section>
+        </form>
+      </section>
+      <img src="../Images/images_customers/editcustomer.png" alt="Outdoor Shot of Café">
+    </section>
+
+    <footer>
+      <p>&copy; 2021. Submitted by Seb Narciso and Lance Alcantara.</p>
+    </footer>
+  </body>
+</html>

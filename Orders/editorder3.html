@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Edit Order 0000002</title>
+    <link href="editorderstyle.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="main-nav">
+      <img src="../Images/images_orders/logo.png" alt="logo">
+
+      <ul class="nav-list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Customers/customers.html">Customers</a></li>
+        <li><a href="../Food/foods.html">Food</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="../index.html">Sign Out</a></li>
+      </ul>
+    </nav>
+
+    <section class="editorder-container">
+      <section class="editorder-form">
+        <h1>Edit Order Details</h1>
+        <p>Select the Order Number</p>
+        <label for="order-number">Order Number</label>
+        <input list="order-number-list" name="order-number" value="0000002">
+        <datalist id="order-number-list">
+          <option value="0000001">
+          <option value="0000101">
+          <option value="0000002">
+          <option value="0000202">
+          <option value="0000003">
+        </datalist>
+      </section>
+
+      <section id="food-item1">
+        <img src="../Images/images_orders/fooditem1.png" alt="logo">
+        <section class="food-item1details">
+        <h2>Espresso</h2>
+        <h3>PHP 120</h3>
+        <h4>Item No. 0001</h4>
+        <p>Our smooth signature Espresso Roast with rich flavor and caramelly sweetness is at the very heart of everything we do.</p>
+        <form>
+          <label for="quantity">Quantity</label>
+          <input type="number" name="quantity" min="0" value="0">
+        </form>
+      </section>
+    </section>
+
+      <section id="food-item2">
+        <img src="../Images/images_orders/fooditem2.png" alt="logo">
+        <section class="food-item2details">
+        <h2>Espresso Macchiato</h2>
+        <h3>PHP 140</h3
+        <h4>Item No. 0002</h4>
+        <p>Our rich espresso marked with dollop of steamed milk and foam. A European-style classic.</p>
+        <form>
+          <label for="quantity">Quantity</label>
+          <input type="number" name="quantity" min="0" value="1">
+        </form>
+      </section>
+    </section>
+
+      <section id="food-item3">
+        <img src="../Images/images_orders/fooditem3.png" alt="logo">
+        <section class="food-item3details">
+        <h2>Cafe Latte</h2>
+        <h3>PHP 150</h3>
+        <h4>Item No. 0003</h4>
+        <p>Our dark, rich espresso balanced with steamed milk and a light layer of foam. A perfect milk-forward warm-up.</p>
+        <form>
+          <label for="quantity">Quantity</label>
+          <input type="number" name="quantity" min="0" value="1">
+        </form>
+      </section>
+    </section>
+
+      <section id="food-item4">
+        <img src="../Images/images_orders/fooditem4.png" alt="logo">
+        <section class="food-item4details">
+        <h2>Spanish Latte</h2>
+        <h3>PHP 160</h3>
+        <h4>Item No. 0004</h4>
+        <p>Our Spanish latte, or Café con Leche, is our signature espresso-based drink with milk and condensed milk. It's slightly sweeter than a normal latte but not as sweet as a latte with flavored syrup.</p>
+        <form>
+          <label for="quantity">Quantity</label>
+          <input type="number" name="quantity" min="0" value="0">
+        </form>
+      </section>
+    </section>
+
+      <section id="food-item5">
+        <img src="../Images/images_orders/fooditem5.png" alt="logo">
+        <section class="food-item5details">
+        <h2>Matcha Latte</h2>
+        <h3>PHP 150</h3>
+        <h4>Item No. 0005</h4>
+        <p>Smooth and creamy matcha sweetened just right and served with steamed milk. This favorite will transport your senses to pure green delight.</p>
+        <form>
+          <label for="quantity">Quantity</label>
+          <input type="number" name="quantity" min="0" value="0">
+        </form>
+      </section>
+    </section>
+
+      <section class="bottom">
+        <h2><b>Total: </b>PHP 290.00</h2>
+        <section class="btn-grp">
+        <button id="save-btn" onclick="document.location='order3.html'" type="button">Save Changes</button>
+        <button id="cancel-btn" onclick="document.location='order3.html'" type="button">Cancel</button>
+      </section>
+    </section>
+  </section>
+
+    <footer>
+      <p>&copy; 2021. Submitted by Seb Narciso and Lance Alcantara.</p>
+    </footer>
+    </body>
+</html>

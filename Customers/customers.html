@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Customer List</title>
+    <link href="customersstyle.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="main-nav">
+      <img src="../Images/images_customers/logo.png" alt="logo">
+
+      <ul class="nav-list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="../Food/foods.html">Food</a></li>
+        <li><a href="../Orders/orders.html">Orders</a></li>
+        <li><a href="../index.html">Sign Out</a></li>
+      </ul>
+    </nav>
+
+    <section class="customer-list-container">
+      <h1>Customers</h1>
+      <p>Do remember that customer data must be upheld with utmost confidentiality.</p>
+
+      <section id="addcustomer-btn">
+        <button class="add-btn" onclick="document.location='addcustomer.html'">+ Add Customers</button>
+      </section>
+
+      <section class="customer-list-table">
+        <table>
+          <tr id="main-head">
+            <th>Customer Name</th>
+            <th>Address</th>
+            <th>Contact Number</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>Juan Dela Cruz</td>
+            <td>Blk.6 Lot 9, Fighter Street, Quezon City, Metro Manila</td>
+            <td>+63 9123456789</td>
+            <td>
+              <button class="view-btn" onclick="document.location='customer1.html'">View Customer</button>
+              <button class="edit-btn" onclick="document.location='editcustomer1.html'">Edit Details</button>
+              <button class="del-btn" onclick="document.location='customers.html'">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Japeth Shamanco</td>
+            <td>101-A, Lowe Street, Malolos, Bulacan</td>
+            <td>+63 9987654321</td>
+            <td>
+              <button class="view-btn" onclick="document.location='customer2.html'">View Customer</button>
+              <button class="edit-btn" onclick="document.location='editcustomer2.html'">Edit Details</button>
+              <button class="del-btn" onclick="document.location='customers.html'">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Brenda Santos</td>
+            <td>Cor.Ruby 6C, Bayawak Street, Sta. Rosa, Laguna</td>
+            <td>+63 9135791357</td>
+            <td>
+              <button class="view-btn" onclick="document.location='customer3.html'">View Customer</button>
+              <button class="edit-btn" onclick="document.location='editcustomer3.html'">Edit Details</button>
+              <button class="del-btn" onclick="document.location='customers.html'">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Lance Alcantara</td>
+            <td>53-B, West Point St., Quezon City, Metro Manila</td>
+            <td>+63 9684433374</td>
+            <td>
+              <button class="view-btn" onclick="document.location='customer4.html'">View Customer</button>
+              <button class="edit-btn" onclick="document.location='editcustomer4.html'">Edit Details</button>
+              <button class="del-btn" onclick="document.location='customers.html'">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Sebastian Narciso</td>
+            <td>Unit 4-E, Garnet Cor. Ruby Street, Angeles, Pampanga</td>
+            <td>+63 9121212121</td>
+            <td>
+              <button class="view-btn" onclick="document.location='customer5.html'">View Customer</button>
+              <button class="edit-btn" onclick="document.location='editcustomer5.html'">Edit Details</button>
+              <button class="del-btn" onclick="document.location='customers.html'">Delete</button>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+    </section>
+
+    <footer>
+      <p>&copy; 2021. Submitted by Seb Narciso and Lance Alcantara.</p>
+    </footer>
+  </body>
+</html>

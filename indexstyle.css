@@ -1,0 +1,135 @@
+/*
+  Lance Gian G. Alcantara & Seastian T. Narciso
+  ID #190151 & #183439
+  July 19, 2021
+
+	I have not discussed the CSS code in my program with anyone
+	other than my instructor or the teaching assistants assigned
+	to this course.
+
+	I have not used CSS code obtained from another student, or any
+	other unauthorized source, either modified or unmodified.
+
+	If any CSS code or documentation used in my program was obtained
+	from another source, such as a textbook or website, that has been
+	clearly noted with a proper citation in the comments of my program.
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins";
+  color: #373737;
+}
+
+nav {
+  display:grid;
+  grid-template-columns: 25% 75%;
+  background-color: #EBECEB;
+}
+
+nav ul{
+  display: flex;
+}
+
+.main-nav{
+  padding: 15px 0px 15px 20px;
+}
+.main-nav li {
+  list-style: none;
+  margin-right: 100px;
+  padding: 10px 0px 0px 0px;
+}
+
+.main-nav li a{
+  color: #373737;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+li a::after{
+  content:"";
+  position: absolute;
+  display:block;
+  height: 0.1em;
+  width: 0;
+  background-color: #606060;
+  bottom:-0.5em;
+  transition: all ease-in-out 250ms;
+}
+
+li a:hover::after{
+  width:100%;
+}
+
+#about > img{
+  padding: 30px 0px 0px 0px;
+}
+
+header{
+  display: grid;
+  grid-template-columns: 1FR 1FR;
+  grid-template-rows: 1FR;
+  background-color: #F8F8F8
+}
+
+header > .header{;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  line-height: 30px;
+  text-align: center;
+  margin: auto;
+}
+header > .header > p{
+  font-family: garamond;
+}
+
+header > img{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+main > #about{
+  font-family: garamond;
+  line-height: 35px;
+  padding: 50px;
+  margin: 25px 0px 0px 0px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+}
+
+main > #about >h2{
+  margin-bottom: 0px;
+}
+
+main > #locations{
+  font-family: garamond;
+  line-height: 35px;
+  padding: 30px 0px 30px 10px;
+  margin: 40px 0px 50px 0px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  background-color: #F8F8F8;
+}
+
+footer{
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  background-color: #EBECEB;
+  position: relative;
+  font-size: 12px;
+}

@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins";
+  color: #373737;
+}
+
+nav {
+  display:grid;
+  grid-template-columns: 35% 65%;
+  background-color: #EBECEB;
+}
+
+nav ul{
+  display: flex;
+}
+
+.main-nav{
+  padding: 15px 0px 15px 30px;
+}
+
+.nav-list li {
+  list-style: none;
+  margin-right: 100px;
+  padding: 10px 0px 0px 0px
+}
+
+.nav-list li a{
+  color: #373737;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+li a::after{
+  content:"";
+  position: absolute;
+  display:block;
+  height: 0.1em;
+  width: 0;
+  background-color: #606060;
+  bottom:-0.5em;
+  transition: all ease-in-out 250ms;
+}
+
+li a:hover::after{
+  width:100%;
+}
+
+#food-item {
+  display: grid;
+  grid-template-columns: 1FR 2FR 1FR;
+  grid-row: 1FR;
+}
+
+.food-itemdetails{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 30px 50px 50px 50px;
+  line-height: 40px;
+  background-color: #F8F8F8;
+  margin: 50px 30px 30px 0px;
+}
+#food-item > img{
+  padding: 50px 0px 50px 50px ;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+
+button{
+  font-family: Poppins;
+  background-color: #555555;
+  border: 2px solid #555555;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 15px 0px 0px 0px;
+  cursor: pointer;
+  align-items: center;
+  width: 55%;
+  border-radius: 5px;
+  height: auto;
+}
+
+#del-btn{
+  background-color: white;
+  color: #730000;
+  border-color:  #730000;
+}
+
+.btn-grp{
+  display: flex;
+  gap: 10px;
+}
+
+footer{
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  background-color: #EBECEB;
+  position: relative;
+  font-size: 12px;
+}

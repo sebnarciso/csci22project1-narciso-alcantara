@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Edit Food Item</title>
+    <link href="editfood.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="main-nav">
+      <img src="../Images/images_food/logo.png" alt="logo">
+
+      <ul class="nav-list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Customers/customers.html">Customers</a></li>
+        <li><a href="foods.html">Food</a></li>
+        <li><a href="../Orders/orders.html">Orders</a></li>
+        <li><a href="../index.html">Sign Out</a></li>
+      </ul>
+    </nav>
+
+    <section class="editfood-container">
+      <section class="editfood-form">
+        <h1>Edit Food Item Details</h1>
+        <form>
+          <label for="itemnum">Item Number</label>
+          <input type="text" name="itemnum" value="0001">
+
+          <label for="name">Product Name</label>
+          <input type="text" name="name" value="Espresso">
+
+          <label for="price">Price</label>
+          <input type="text" name="price" value="120">
+
+          <label for="description">Description</label>
+          <textarea id="description" name="description" rows="4" cols="50">Our smooth signature Espresso Roast with rich flavor and caramelly sweetness is at the very heart of everything we do.</textarea>
+
+          <section class="btn-grp">
+            <button id="save-btn" onclick="document.location='food1.html'" type="button">Save Changes</button>
+            <button id="cancel-btn" onclick="document.location='food1.html'" type="button">Cancel</button>
+          </section>
+        </form>
+    </section>
+    <img src="../Images/images_food/editfood.png" alt="Outdoor Shot of Café">
+  </section>
+
+    <footer>
+      <p>&copy; 2021. Submitted by Seb Narciso and Lance Alcantara.</p>
+    </footer>
+  </body>
+</html>

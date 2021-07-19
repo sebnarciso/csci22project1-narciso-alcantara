@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins";
+  color: #373737;
+}
+
+nav {
+  display:grid;
+  grid-template-columns: 40% 60%;
+  background-color: #EBECEB;
+}
+
+nav ul{
+  display: flex;
+}
+
+.main-nav{
+  padding: 15px 0px 15px 30px;
+}
+.nav-list li {
+  list-style: none;
+  margin-right: 100px;
+  padding: 10px 0px 0px 0px
+}
+
+.nav-list li a{
+  color: #373737;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+li a::after{
+  content:"";
+  position: absolute;
+  display:block;
+  height: 0.1em;
+  width: 0;
+  background-color: #606060;
+  bottom:-0.5em;
+  transition: all ease-in-out 250ms;
+}
+
+li a:hover::after{
+  width:100%;
+}
+
+.editfood-container {
+  display: grid;
+  grid-template-columns: 2FR 0.5FR 2FR 0.5FR;
+  grid-template-rows: 0.10212711FR 0.63035019FR 0.2075227FR;
+}
+
+.editfood-form {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-items: center;
+  justify-content: center;
+}
+
+.editfood-container > img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 1 / 4;
+}
+
+input[type=text], input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#description{
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button{
+  font-family: Poppins;
+  background-color: #555555;
+  border: 2px solid #555555;
+  color: white;
+  padding: 10px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 15px 0px 10px 0px;
+  cursor: pointer;
+  align-items: center;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#cancel-btn{
+  background-color: white;
+  border-color: #555555;
+  color: #555555;
+}
+
+.btn-grp{
+  display: flex;
+  gap: 10px;
+}
+
+.editfood-form h2 {
+  margin-bottom: 14px;
+}
+
+footer{
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  background-color: #EBECEB;
+  position: relative;
+  font-size: 12px;
+}

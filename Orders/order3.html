@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Order Details</title>
+    <link href="orderdetailstyle.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="main-nav">
+      <img src="../Images/images_orders/logo.png" alt="logo">
+
+      <ul class="nav-list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Customers/customers.html">Customers</a></li>
+        <li><a href="../Food/foods.html">Food</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="../index.html">Sign Out</a></li>
+      </ul>
+    </nav>
+
+    <section class="order-details-container">
+      <section class="customer-details">
+        <h2>Customer Details</h2>
+        <h3>Japeth Shamanco</h3>
+        <p>japeth.shamanco@obf.ateneo.edu</p>
+        <p>+63 9987654321</p>
+        <p>101-A, Lowe Street, Malolos, Bulacan</p>
+      </section>
+
+      <section class="order-details">
+        <h1>Order 0000002</h1>
+        <h2>Date Placed: 04/26/2021</h2>
+      </section>
+
+      <section id="food-item1">
+        <img src="../Images/images_orders/fooditem2.png" alt="logo">
+        <section class="food-item1details">
+          <h2>Espresso Macchiato</h2>
+          <h3>Item No.:0002</h3>
+          <h3>PHP 140</h3>
+          <h4><b>Item Total:</b>120</h4>
+          <form>
+            <label for="quantity">Quantity</label>
+            <input type="number" name="quantity" value="1" readonly>
+          </form>
+      </section>
+    </section>
+
+      <section id="food-item2">
+        <img src="../Images/images_orders/fooditem3.png" alt="logo">
+        <section class="food-item2details">
+          <h2>Cafe Latte</h2>
+          <h3>Item No.:0003</h3>
+          <h3>PHP 150</h3>
+          <h4><b>Item Total:</b>150</h4>
+          <form>
+            <label for="quantity">Quantity</label>
+            <input type="number" name="quantity" value="1" readonly>
+          </form>
+      </section>
+    </section>
+
+      <section class="btn-grp">
+        <button class="edit-btn" onclick="document.location='editorder3.html'">Edit Details</button>
+        <button class="del-btn" onclick="document.location='orders.html'">Delete Order</button>
+      </section>
+
+      <section class="bottom">
+        <h2><b>Order Total: </b>PHP 290.00</h2>
+      </section>
+    </section>
+
+    <footer>
+      <p>&copy; 2021. Submitted by Seb Narciso and Lance Alcantara.</p>
+    </footer>
+  </body>
+</html>
